@@ -1,2 +1,5 @@
 build
 .lock-wscript
+.idea
+logs/
+binding*.o

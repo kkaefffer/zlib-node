@@ -1,25 +1,18 @@
-# DO NOT USE – DEPRECATED
-
-This extension is deprecated since the functionality was folded into node.js core: https://nodejs.org/dist/latest/docs/api/zlib.html
-
-# NAME
-
-node-zlib - Simple, synchronous deflate/inflate for node.js buffers.
+Simple, synchronous deflate for node.js buffers.
 
 
 
 # USAGE
 
-Install with `npm install zlib`.
+Install with `npm install zlib-node`.
 
     var Buffer = require('buffer').Buffer;
-    var zlib = require('zlib');
+    var zlib = require('zlib-node');
     
     var input = new Buffer('lorem ipsum dolor sit amet');
-    var compressed = zlib.deflate(input);
-    var output = zlib.inflate(compressed);
+    var output = zlib.deflate(input);
 
-Note that `node-zlib` is only intended for small (< 128 KB) data that you already have buffered. It is not meant for input/output streams.
+Note that `zlib-node` is only intended for small (< 128 KB) data that you already have buffered. It is not meant for input/output streams.
 
 # BUILDING
 
@@ -27,14 +20,14 @@ Make sure you have `zlib` installed. Mac OS X ships with it by default.
 
 To obtain and build the bindings:
 
-    git clone git://github.com/kkaefer/node-zlib.git
-    cd node-zlib
+    git clone git://github.com/kkaeffer/zlib-node.git
+    cd zlib-node
     ./configure
     make
 
 You can also use [`npm`](https://github.com/isaacs/npm) to download and install them:
 
-    npm install zlib
+    npm install zlib-node
 
 
 
@@ -49,10 +42,10 @@ You can also use [`npm`](https://github.com/isaacs/npm) to download and install 
 
 # CONTRIBUTORS
 
-* [Konstantin Käfer](https://github.com/kkaefer)
+* [Konstantin Käffer](https://github.com/kkaefer)
 
 
 
 # LICENSE
 
-`node-zlib` is [BSD licensed](https://github.com/kkaefer/node-zlib/raw/master/LICENSE).
+`zlib-node` is [BSD licensed](https://github.com/kkaefer/zlib-node/raw/master/LICENSE).
